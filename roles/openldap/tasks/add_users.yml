@@ -34,7 +34,7 @@
       mail: "mario.rossi@example.org"
       eduPersonAffiliation: "member"
       employeeNumber: "A-1002"
-     userPassword: "mariopw2018"
+      userPassword: "mariopw2018"
 
 - ldap_attr:
     dn: "uid=mario,ou=people,dc=example,dc=org"
