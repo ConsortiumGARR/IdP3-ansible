@@ -8,6 +8,10 @@
     <AttributeFilterPolicy id="corso">
         <PolicyRequirementRule xsi:type="Requester" value="https://sp.example.org/shibboleth" />
 
+        <AttributeRule attributeID="MY_PAGA_CODE">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
         <!-- eduPersonPrincipalName,uid,mail released by default filter -->
         <AttributeRule attributeID="eduPersonPrincipalName">
             <PermitValueRule xsi:type="ANY" />

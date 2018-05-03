@@ -199,6 +199,10 @@
         <AttributeEncoder xsi:type="SAML2String" name="urn:oid:1.3.6.1.4.1.5923.1.1.1.11" friendlyName="eduPersonAssurance" encodeType="false" />
     </AttributeDefinition>
 
+    <AttributeDefinition xsi:type="Simple" id="MY_PAGA_CODE" sourceAttributeID="employeeNumber">
+        <Dependency ref="myLDAP" />
+        <AttributeEncoder xsi:type="SAML2String" name="CODICE_PAGA" friendlyName="Codice X servizio paghe" encodeType="false" />
+    </AttributeDefinition>
 
     <!-- ========================================== -->
     <!--      Data Connectors                       -->

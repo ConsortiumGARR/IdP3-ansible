@@ -13,9 +13,14 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd">
 
+
     <!-- Release some attributes to an SP. -->
     <AttributeFilterPolicy id="example1">
         <PolicyRequirementRule xsi:type="Requester" value="https://sp.example.org/shibboleth" />
+
+        <AttributeRule attributeID="MY_PAGA_CODE">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
 
         <AttributeRule attributeID="eduPersonPrincipalName">
             <PermitValueRule xsi:type="ANY" />
@@ -41,6 +46,10 @@
             <Rule xsi:type="Requester" value="https://sp.example.org" />
             <Rule xsi:type="Requester" value="https://another.example.org/shibboleth" />
         </PolicyRequirementRule>
+
+        <AttributeRule attributeID="MY_PAGA_CODE">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
 
         <AttributeRule attributeID="eduPersonScopedAffiliation">
             <PermitValueRule xsi:type="ANY" />

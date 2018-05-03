@@ -251,6 +251,11 @@
     </AttributeDefinition>
     -->
 
+    <AttributeDefinition xsi:type="Simple" id="MY_PAGA_CODE" sourceAttributeID="employeeNumber">
+        <Dependency ref="myLDAP" />
+        <AttributeEncoder xsi:type="SAML2String" name="CODICE_PAGA" friendlyName="Codice X servizio paghe" encodeType="false" />
+    </AttributeDefinition>
+
 </AttributeResolver>
 
 <!-- curl -sk https://localhost/idp/profile/admin/reload-service?id=shibboleth.AttributeResolverService | html2text -->
