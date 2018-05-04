@@ -187,6 +187,12 @@
     dest: "{{ idp_path }}/conf/attribute-resolver.xml"
   when: pre_t is defined and pre_t > 3 
 
+- name: Add IdP attribute-resolver-myRdbms.xml
+  copy: 
+    src: roles/shib3idp/files/attribute-resolver-myRdbms.xml
+    dest: "{{ idp_path }}/conf/attribute-resolver-myRdbms.xml"
+  when: pre_t is defined and pre_t > 3
+
 - name: Remove attribute-resolver-full.xml from services.xml
   copy: 
     src: roles/shib3idp/files/services.xml-pre_t4

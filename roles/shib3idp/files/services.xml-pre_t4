@@ -111,6 +111,7 @@
 
     <util:list id ="shibboleth.AttributeResolverResources">
       <value>%{idp.home}/conf/attribute-resolver.xml</value>
+      <value>%{idp.home}/conf/attribute-resolver-myRdbms.xml</value>
     </util:list>
 
     <util:list id ="shibboleth.AttributeFilterResources">
