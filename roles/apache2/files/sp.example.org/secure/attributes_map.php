@@ -50,6 +50,7 @@ $environment_attribute = array(
 #Name of the environment variable	=>array (NONEED|OPTIONAL|REQUIRED, "value or regex", SAML attribute name),
 		"codiceaccesso"						=>array (REQUIRED,"","MY_PAGA_CODE"),
 		"eppn"						=>array (OPTIONAL,"","urn:oid:1.3.6.1.4.1.5923.1.1.1.6"),
+		"myRuolo"						=>array (OPTIONAL,"","urn:oid:1.3.6.1.4.1.99999999.1.1.1.1"),
 		"affiliation"				=>array (NONEED,"staff","urn:oid:1.3.6.1.4.1.5923.1.1.1.9"),
 		"entitlement"				=>array (OPTIONAL,"","urn:oid:1.3.6.1.4.1.5923.1.1.1.7"),
 		"displayName"				=>array (OPTIONAL,"","urn:oid:2.16.840.1.113730.3.1.241"),
